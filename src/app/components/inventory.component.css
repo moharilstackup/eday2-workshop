@@ -1,0 +1,13 @@
+/* .thumbnail {
+    border:solid;
+    height:500;
+    width:20;
+} */
+.thumbnail {
+    height : 48px;
+}
+.item-label {
+    border:none;
+    font-size:1.3em;
+    font-weight: bolder;
+}

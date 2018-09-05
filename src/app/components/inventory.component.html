@@ -1,0 +1,21 @@
+<p>
+  inventory works!
+</p>
+<!-- <img src="../../assets/fruits/acorn_squash.png" alt="acorn_squash" height="42" width="42"> -->
+
+<table width="100%">
+    <tr *ngFor="let item of inventory;let n=index" align="center">
+      <td>
+      <img src="assets/fruits/{{item.image}}" class="thumbnail">
+      </td>
+    <td align="left">
+      <span class="item-label" >{{item.label}}</span>
+    </td>
+    <td>
+      <!-- ({{item.quantity}}) -->
+      <button type="button" (click)="addItem(item)" [disabled]="item.quantity <= 0"> 
+        ADD
+      </button>
+    </td>
+    </tr>
+  </table>
